@@ -1,0 +1,20 @@
+(10-A-4ruby) https://www.codewars.com/kata/55eeddff3f64c954c2000059/solutions/ruby?filter=me&sort=best_practice&invalids=false
+
+def sum_consecutives(lst)
+    nlst = []
+    i = 0
+    while  i < lst.length
+        a = lst[i]
+        total = a
+        
+        while i+1 < lst.length and lst[i+1] == a 
+            total = total + lst[i+1]  
+            i = i+1
+        end
+          nlst.append(total)
+        i += 1
+      
+    end
+    return nlst
+
+end
