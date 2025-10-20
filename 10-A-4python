@@ -1,0 +1,23 @@
+(10-A-4python) https://www.codewars.com/kata/55eeddff3f64c954c2000059/solutions/python?filter=me&sort=best_practice&invalids=false
+
+# 跑列表 控制迴圈變數 i
+# 數字一樣就加起來
+# 一個被加的變數 total
+# 紀錄上一個數字的變數 
+# 紀錄當下數字的變數 
+# 比較後判斷是相加，還是回傳到新的列表中nlst
+# a在判斷相同時不能變動，要一直到跟b不同時才會變動
+            
+def sum_consecutives(lst):
+    nlst = []
+    i = 0
+    while  i < len(lst):
+        a = lst[i]
+        total = a
+        
+        while i+1 < len(lst) and lst[i+1] == a :
+            total = total + lst[i+1]  
+            i = i+1
+        nlst.append(total)
+        i += 1 
+    return nlst
