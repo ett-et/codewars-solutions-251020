@@ -1,0 +1,17 @@
+(10-A-5ruby) https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/solutions/ruby?filter=me&sort=best_practice&invalids=false
+
+def solution(s)
+    i = 0
+    ns = []
+    while i < s.length 
+        a = s[i]
+        if i+1 < s.length
+            b = s[i + 1]
+            ns.push(a + b)
+        else
+            ns.push(a + '_')
+        end
+        i += 2
+    end
+    return ns
+end
