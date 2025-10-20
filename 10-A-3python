@@ -1,0 +1,17 @@
+ (10-A-3python) https://www.codewars.com/kata/554b4ac871d6813a03000035/solutions/python?filter=me&sort=best_practice&invalids=false
+
+# 空白分隔字串
+# 找出最大和最小
+# 比大小要用數字
+# 空白分隔字串轉成列表
+# 比較物件內數字大小
+# 迴圈第一個變數找最大，迴圈第二個變數找出最小
+# 拼成字串回傳
+# 迴圈次數為 陣列長度
+# 或 可以比較列表內大小的語法 > 找最大和最小拼起來
+
+def high_and_low(numbers):
+    numbers = [int(numbers) for numbers in numbers.split()]
+    big = max(numbers)
+    small = min(numbers)
+    return (str(big) + " " + str(small))
