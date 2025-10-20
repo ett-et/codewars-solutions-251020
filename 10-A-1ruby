@@ -1,0 +1,14 @@
+#  (10-A-1ruby) https://www.codewars.com/kata/586f6741c66d18c22800010a/solutions/solutions?filter=me&sort=best_practice&invalids=false
+
+def sequence_sum(begin_number, end_number, step)
+  if begin_number > end_number
+        return 0
+    else
+        total = 0
+        while begin_number <= end_number 
+            total = total + begin_number
+            begin_number = begin_number + step
+        end
+        return total
+  end
+end
