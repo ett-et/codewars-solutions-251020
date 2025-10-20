@@ -1,0 +1,15 @@
+ (10-A-2python) https://www.codewars.com/kata/5412509bd436bd33920011bc/solutions/python?filter=me&sort=best_practice&invalids=false
+
+# return masked string
+# 字串只露出最後四個字，其他用#代替，無論幾位數前面都#
+# 低於四個字則會顯示數字，第五個開始有 右往左切片[-4:]
+# 抓長度 len
+# 空的顯示空
+# 從右往左
+
+def maskify(cc):
+    if len(cc) <= 4:
+        return(cc)
+    else:
+        x = (len(cc)-4)*"#" + cc[-4:]
+        return(x)
