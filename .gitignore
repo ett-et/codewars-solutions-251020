@@ -1,0 +1,28 @@
+# Common artifacts
+*.pyc
+__pycache__/
+*.class
+*.o
+*.exe
+*.out
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules
+node_modules/
+
+# Build directories
+build/
+dist/
+target/
+
+# Test output
+.pytest_cache/
+.coverage
+htmlcov/
