@@ -1,0 +1,8 @@
+(10-A-3ruby) https://www.codewars.com/kata/554b4ac871d6813a03000035/solutions/solutions?filter=me&sort=best_practice&invalids=false
+
+def high_and_low(numbers)
+    numbers = numbers.split.map(&:to_i)
+    big = numbers.max
+    small = numbers.min
+    return ( big.to_s + " " + small.to_s)
+end
