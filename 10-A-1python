@@ -1,0 +1,21 @@
+#    (10-A-1 python) https://www.codewars.com/kata/586f6741c66d18c22800010a/solutions/python?filter=me&sort=best_practice&invalids=false
+
+#     從範例推敲出計算邏輯 begin_number + (begin_number + step)
+#     (sequence_sum(2, 6, 2), 12)
+#     2+4+6=12
+#     2+(2+2)+(2+2+2) = total
+#     如果一開始 begin_number > end_number 那結果就是0
+#     不是的話就進迴圈begin_number <= end_number
+#     total = begin_number + step 更新begin_number
+#     4+4+4+...............
+
+    if begin_number > end_number:
+        return 0
+    else:
+        total = 0
+        while begin_number <= end_number :
+            total = total + begin_number
+            begin_number = begin_number + step
+        return total
+
+
