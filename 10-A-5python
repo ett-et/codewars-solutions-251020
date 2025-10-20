@@ -1,0 +1,17 @@
+(10-A-5python) https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/solutions/python?filter=me&sort=best_practice&invalids=false
+
+# 字串兩兩一組
+# 若有落單補_
+
+def solution(s):
+    i = 0
+    ns = []
+    while i < len(s):
+        a = s[i]
+        if i+1 < len(s):
+            b = s[i + 1]
+            ns.append(a + b)
+        else:
+            ns.append(a + '_')
+        i += 2
+    return ns
